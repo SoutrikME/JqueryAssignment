@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jquery Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Jquery Assignment</h2>
+  <ul class="nav nav-tabs">
+    <li class="active" id="nav_profile"><a data-toggle="tab" href="#profile">Profile</a></li>
+    <li id="nav_feed"><a data-toggle="tab" href="#feed">Feed</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="profile" class="tab-pane fade in active">
+      <!-- <h3>Profile</h3> -->
+      <center><div class="loader_profile"></div></center>
+      <!-- Profile Details -->
+      <div class="profile_details">
+        <div><center><img id="myImage" alt="Profile Image"/></center></div>
+        <div class="div_profile">Hi I am <b><span id="myName"></span></b></div>
+        <div>Email - <span id="myEmail"></span></div>
+        <div>Birth Day - <span id="myDob"></span></div>
+        <div>Hometown - <span id="myHometown"></span></div>
+        <div>Profile Url - <span id="myProfileId"></span></div>
+      </div>
+      <!-- Profile Details End -->
+    </div>
+    <div id="feed" class="tab-pane fade">
+      <!-- <h3>Feed</h3> -->
+      <center><div class="loader_feed"></div></center>
+      <!-- Post List Item -->
+      <div class="post_list">
+        <ul id="dataList"></ul>
+        <div class="templates">
+          <div id="listItem">
+            <!-- List Item Row 1 -->
+            <div class="row1">
+              <div class="story"></div>
+            </div>
+            <!-- List Item Row 1 End -->
+            <!-- List Item Row 2 -->
+            <div class="row2">
+              <div class="created_time"></div>
+            </div>  
+            <!-- List Item Row 2 End --> 
+            <!-- List Item Row 2 -->
+            <div class="row3">
+              <div class="line"></div>
+            </div>  
+            <!-- List Item Row 2 End --> 
+          </div>
+        </div>
+      <!-- Post List Item End -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery files -->
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
